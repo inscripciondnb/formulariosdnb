@@ -1,13 +1,12 @@
-FORMULARIO OBA 2026 · GITHUB PAGES
+ACTUALIZACIÓN OBA 2026 — SIN CORREO Y CON ELIMINACIÓN
 
-1. Suba index.html a la raíz de su repositorio GitHub.
-2. En Settings > Pages, elija Deploy from a branch, main y / (root).
-3. Cree un proyecto en script.google.com y pegue el contenido de Code.gs.
-4. Ejecute configurar una vez y autorice. Se creará la planilla de inscripciones en su Google Drive; su enlace aparece en el registro de ejecución.
-5. Apps Script: Implementar > Nueva implementación > Aplicación web. Ejecutar como: usted. Acceso: cualquier persona.
-6. Copie la dirección terminada en /exec y péguela entre las comillas de const API_URL="" en index.html. Guarde el cambio en GitHub.
+1. Reemplace index.html en GitHub y agregue admin.html.
+2. En su proyecto de Apps Script actual, reemplace Code.gs por el incluido. Mantenga el mismo proyecto para conservar la planilla y los registros existentes.
+3. En Apps Script > Configuración del proyecto > Propiedades de la secuencia de comandos, agregue ADMIN_PASSWORD con una contraseña administrativa larga elegida por usted. No ponga la contraseña en los archivos de GitHub.
+4. Si ya ejecutó configurar antes, no necesita repetirlo. Para una instalación nueva, ejecute configurar una vez y autorice.
+5. Implementar > Administrar implementaciones > Editar (lápiz) > Versión: Nueva versión > Implementar. Mantenga la URL /exec actual que ya está conectada en ambos HTML.
+6. Abra admin.html en su sitio de GitHub Pages, ingrese su contraseña y verá las inscripciones. Cada registro tiene Eliminar inscripción y pide confirmación. La eliminación borra la fila de la planilla.
 
-La opción 5 selecciona las actividades 1 a 4. Al desmarcarla se desmarcan las cuatro. Si desmarca una de las cuatro, la opción 5 también se desmarca.
-El bus turístico y la actividad libre desmarcan las opciones incompatibles.
-Sin configurar API_URL no se envían inscripciones ni se muestra un éxito ficticio.
-Code.gs se pega en Apps Script: no es necesario subirlo a GitHub.
+El formulario ya no pide correo electrónico. Si la planilla anterior tenía una columna Correo, se conserva para no modificar sus registros anteriores y queda vacía en nuevas inscripciones.
+La opción 5 selecciona las actividades 1 a 4.
+La contraseña se comprueba en Apps Script y el listado nunca se entrega sin ella. No se almacena en el navegador.
