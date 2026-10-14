@@ -1,0 +1,13 @@
+FORMULARIO OBA 2026 · GITHUB PAGES
+
+1. Suba index.html a la raíz de su repositorio GitHub.
+2. En Settings > Pages, elija Deploy from a branch, main y / (root).
+3. Cree un proyecto en script.google.com y pegue el contenido de Code.gs.
+4. Ejecute configurar una vez y autorice. Se creará la planilla de inscripciones en su Google Drive; su enlace aparece en el registro de ejecución.
+5. Apps Script: Implementar > Nueva implementación > Aplicación web. Ejecutar como: usted. Acceso: cualquier persona.
+6. Copie la dirección terminada en /exec y péguela entre las comillas de const API_URL="" en index.html. Guarde el cambio en GitHub.
+
+La opción 5 selecciona las actividades 1 a 4. Al desmarcarla se desmarcan las cuatro. Si desmarca una de las cuatro, la opción 5 también se desmarca.
+El bus turístico y la actividad libre desmarcan las opciones incompatibles.
+Sin configurar API_URL no se envían inscripciones ni se muestra un éxito ficticio.
+Code.gs se pega en Apps Script: no es necesario subirlo a GitHub.
