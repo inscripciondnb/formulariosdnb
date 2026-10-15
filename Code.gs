@@ -46,7 +46,7 @@ function doPost(e) {
     ['nombre','apellido','telefono','pais','institucion'].forEach(k => {if(typeof d[k] !== 'string' || !d[k].trim() || d[k].length > 150) throw Error('Complete los datos obligatorios.');});
     if(typeof d.id !== 'string' || !/^[a-f0-9-]{36}$/.test(d.id)) throw Error('Comprobante inválido.');
     if(!Array.isArray(d.actividades) || !d.actividades.length || d.actividades.some(n=>!ACTIVIDADES[n])) throw Error('Seleccione actividades válidas.');
-    if((d.actividades.includes(7)&&d.actividades.length>1)||(d.actividades.includes(6)&&d.actividades.some(n=>n<=3))) throw Error('Las actividades coinciden en horario.');
+    if((d.actividades.includes(7)||d.actividades.includes(6))&&d.actividades.length>1) throw Error('Las actividades coinciden en horario.');
     if(typeof d.observaciones !== 'string' || d.observaciones.length>1000) throw Error('Revise las observaciones.');
     lock.waitLock(20000);
     const ssid = PropertiesService.getScriptProperties().getProperty('SPREADSHEET_ID');

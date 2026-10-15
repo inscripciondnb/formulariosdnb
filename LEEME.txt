@@ -10,3 +10,7 @@ ACTUALIZACIÓN OBA 2026 — SIN CORREO Y CON ELIMINACIÓN
 El formulario ya no pide correo electrónico. Si la planilla anterior tenía una columna Correo, se conserva para no modificar sus registros anteriores y queda vacía en nuevas inscripciones.
 La opción 5 selecciona las actividades 1 a 4.
 La contraseña se comprueba en Apps Script y el listado nunca se entrega sin ella. No se almacena en el navegador.
+
+ACTUALIZACIÓN: bus turístico y actividad libre son exclusivos. Desmarque la opción elegida para volver a habilitar las demás. Reemplace index.html en GitHub y Code.gs en Apps Script; publique una Nueva versión de la misma implementación para aplicar también la validación del servidor.
+
+FOTOS: reemplace index.html y suba la carpeta assets completa a la raíz del repositorio, junto al index. Las fotos se amplían al pulsarlas sin seleccionar la actividad. Esta actualización visual no requiere cambios en Apps Script si ya aplicó la versión anterior.
